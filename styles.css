@@ -7,18 +7,18 @@ body {
 
 
 .home {
-    width: 330px;
+    width: 360px;
     height: 200px;
     position: relative;
     top: 30px;
-    left: 10%;
+    left: 5%;
 }
 
 
 .sobre {
-    width: 330px;
-    height: 200px;
+    width: 370px;
+    height: 220px;
     position: relative;
-    top: 100px;
-    left: 10%;
+    top: 70px;
+    left: 2.5%;
 }
