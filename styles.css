@@ -14,11 +14,11 @@ body {
 }
 
 .bugue {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     position: relative;
-    top: -280px;
-    left: 80%
+    top: -55px;
+    left: 75%
 }
 
 
@@ -26,8 +26,8 @@ body {
     width: 370px;
     height: 220px;
     position: relative;
-    top: 70px;
-    left: 2.5%;
+    top: -30px;
+    left: 4%;
 }
 
 .foto {
@@ -35,7 +35,7 @@ body {
     height: 105px;
     z-index: 100;
     position: relative;
-    top: 230px;
-    left: -80px;
+    top: 130px;
+    left: -105px;
     border-radius: 50%;
 }
