@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #5D4040;
+    background-color: #510300;
 }
 
 
@@ -31,11 +31,24 @@ body {
 }
 
 .foto {
-    width: 105px;
-    height: 105px;
+    width: 90px;
+    height: 90px;
     z-index: 100;
     position: relative;
     top: 130px;
-    left: -105px;
+    left: -95px;
     border-radius: 50%;
+}
+
+
+.porque {
+    background-color: #F0DEC0;
+    width: 200px;
+    height: 45px;
+    color: black;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    left: 26.5%;
 }
