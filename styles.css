@@ -2,11 +2,26 @@ body {
     margin: 0;
     padding: 0;
     background-color: #510300;
+    overflow-x: hidden;
+    /* Adicione esta linha */
 }
 
+* {
+    box-sizing: border-box;
+}
+
+img,
+.home,
+.bugue,
+.sobre,
+.foto {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
 
 .home {
-    width: 360px;
+    width: 90vw;
+    max-width: 360px;
     height: 200px;
     position: relative;
     top: 30px;
@@ -14,20 +29,20 @@ body {
 }
 
 .bugue {
-    width: 125px;
-    height: 125px;
+    width: 60px;
+    height: 85px;
     position: relative;
-    top: -55px;
-    left: 75%
+    top: -35px;
+    left: 83%;
 }
 
 
 .sobre {
-    width: 370px;
-    height: 220px;
+    width: 350px;
+    height: 210px;
     position: relative;
-    top: -30px;
-    left: 4%;
+    top: 25px;
+    left: 3.5%;
 }
 
 .foto {
@@ -35,8 +50,8 @@ body {
     height: 90px;
     z-index: 100;
     position: relative;
-    top: 130px;
-    left: -95px;
+    top: 175px;
+    left: -35.5px;
     border-radius: 50%;
 }
 
@@ -49,6 +64,45 @@ body {
     font-size: 2em;
     position: relative;
     text-align: center;
-    top: 10px;
-    left: 26.5%;
+    margin: 120px auto 100px auto;
+    /* centraliza horizontalmente */
+}
+
+
+#ft01 {
+    width: 102px;
+    left: 90px;
+    border-radius: 50%
+}
+
+#ft02 {
+    width: 102px;
+    left: 95px;
+    border-radius: 50%
+}
+
+#ft03 {
+    width: 90px;
+    left: 90px;
+    border-radius: 50%
+}
+
+
+.div {
+    margin: 10px 20px 0px 20px;
+    text-align: center;
+    font-family: "Lustria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85em;
+    color: white;
+}
+
+.p {
+    margin: 10px 20px 25px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
