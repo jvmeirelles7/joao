@@ -45,6 +45,30 @@ img,
     left: 3.5%;
 }
 
+.coracao {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 13px;
+    left: 7%;
+}
+
+.pq {
+    width: 110px;
+    height: 145px;
+    position: relative;
+    top: 45px;
+    left: 0%
+}
+
+.pq-cr {
+    width: 125px;
+    height: 180px;
+    position: relative;
+    top: 45px;
+    left: 0%
+}
+
 .foto {
     width: 85px;
     height: 82px;
@@ -68,7 +92,6 @@ img,
     /* centraliza horizontalmente */
 }
 
-
 .img2 {
     width: 75px;
     height: 70px;
@@ -85,6 +108,9 @@ img,
     font-style: normal;
     font-size: 0.85em;
     color: white;
+    position: relative;
+    top: -80px;
+    z-index: 100
 }
 
 .p {
@@ -94,4 +120,16 @@ img,
     font-family: "Marck Script", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
