@@ -17,16 +17,16 @@ scrollReveal();
 
 // --- Galeria de Fotos ---
 const photos = [
-  { id: 1, src: "img/ft01.jpg", caption: "te amo linda" },
-  { id: 2, src: "img/ft02.jpg", caption: "🌳" },
-  { id: 3, src: "img/ft03.jpg", caption: "😍" },
-  { id: 4, src: "img/ft04.jpg", caption: "te amo princesa" },
-  { id: 5, src: "img/ft05.jpg", caption: "🎂" },
-  { id: 6, src: "img/ft06.jpg", caption: "🎄" },
-  { id: 7, src: "img/ft07.jpg", caption: "🏔️" },
-  { id: 8, src: "img/ft08.jpg", caption: "🏠" },
-  { id: 9, src: "img/ft09.jpg", caption: "🏖️" },
-  { id: 10, src: "img/ft010.jpg", caption: "🍿" }
+  { id: 1, src: "img2/ft01.jpg", caption: "te amo linda" },
+  { id: 2, src: "img2/ft02.jpg", caption: "🌳" },
+  { id: 3, src: "img2/ft03.jpg", caption: "😍" },
+  { id: 4, src: "img2/ft04.jpg", caption: "te amo princesa" },
+  { id: 5, src: "img2ft05.jpg", caption: "🎂" },
+  { id: 6, src: "img2/ft06.jpg", caption: "🎄" },
+  { id: 7, src: "img2/ft07.jpg", caption: "🏔️" },
+  { id: 8, src: "img2/ft08.jpg", caption: "🏠" },
+  { id: 9, src: "img2/ft09.jpg", caption: "🏖️" },
+  { id: 10, src: "img2/ft010.jpg", caption: "🍿" }
 ];
 
 let currentPhotoIndex = 0;

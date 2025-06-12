@@ -11,23 +11,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Marck+Script&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
     <title>Para sophia</title>
 </head>
 <body>
     
-<img class="home" src="img/home.png"">
-<img class="bugue" src="img/BUGUE2.png" alt="">
+
+<img class="home reveal" src="img/home.png"">
+<img class="cora-home reveal" src="img/home-cora.png" alt="">
+<img class="bugue reveal" src="img/BUGUE2.png" alt="">
 
 
-<img class="foto" src="img/foto.jpeg" alt="">
-<img class="sobre" src="img/sobre.png" alt="">
-<img class="coracao"  src="img/coracao4.png" alt="">
+<img class="foto reveal" src="img/foto.jpeg" alt="">
+<img class="sobre reveal" src="img/sobre.png" alt="">
+<img class="coracao reveal"  src="img/cora-sobre.png" alt="">
 
 
-<div class="div">
+<div class="div reveal">
 <h1 class="porque reveal">Porque ?</h1>
 <img class="img2 reveal reveal" id="ft01" src="img/foto02.jpg" alt="">
 <img class="img2 reveal reveal" id="ft02" src="img/foto03.jpeg" alt="">
@@ -94,7 +98,8 @@
 <img class="img2 reveal" id="ft06" src="img/foto16.jpg" alt="">
 
 
-<h1 class="h1 revealNem sempre tu percebe, mas teu esforço transforma tudo ao redor — inclusive a minha vida!</p>
+<h1 class="h1 reveal" id="esforco">13. Seu esforço</h1>
+    <p class="p reveal">Sempre tu percebe, mas teu esforço transforma tudo ao redor — inclusive a minha vida!</p>
 <h1 class="h1 reveal" id="forca"> 14. Sua força</h1>
 <p class="p reveal">Eu vejo tua força nas pequenas coisas, nas escolhas, nas lutas que ninguém vê e me apaixono mais ainda!</p>
 <h1 class="h1 reveal" id="graca">15. Suas Graçinhas</h1>
@@ -102,6 +107,85 @@
 <h1 class="h1 reveal" id="tudo">16. Amo tudo em você</h1>
 <p class="p reveal">Te amo até nos dias em que tu nem se ama tanto assim. Porque pra mim, tu é tudo!</p>
 </div>
+
+
+  <!-- Background Effects -->
+  <div class="background">
+    <div class="floating-hearts"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Stack de Fotos -->
+    <div class="photo-stack" id="photoStack">
+      <!-- As fotos serão inseridas aqui pelo JavaScript -->
+    </div>
+
+    <!-- Indicadores -->
+    <div class="indicators" id="indicators">
+      <!-- Os indicadores serão criados pelo JavaScript -->
+    </div>
+  </main>
+
+
+ <!-- Tela de Loading -->
+    <div id="romantic-loading" class="romantic-loading-overlay">
+        <div class="loading-container">
+            <!-- Container principal -->
+            <div class="loading-card">
+                <!-- Bichinho atirando corações -->
+                <div class="mascot-section">
+                    <div class="mascot-container">
+                        <!-- Bichinho -->
+                        <div class="mascot">🐰</div>
+                        
+                        <!-- Corações sendo atirados -->
+                        <div class="shooting-hearts">
+                            <div class="heart heart-1">💕</div>
+                            <div class="heart heart-2">❤️</div>
+                            <div class="heart heart-3">💖</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nome Sophia -->
+                <div class="title-section">
+                    <h2 class="romantic-title">Sophia minha pincesinha</h2>
+                    <p class="loading-subtitle">Espero que goste, Te amo fifia</p>
+                </div>
+
+                <!-- Barra de loading -->
+                <div class="progress-section">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    
+                    <!-- Coração na barra -->
+                    <div class="progress-heart">💕</div>
+                </div>
+
+                <!-- Corações flutuantes ao redor -->
+                <div class="floating-hearts">
+                    <div class="floating-heart floating-heart-1">💝</div>
+                    <div class="floating-heart floating-heart-2">💖</div>
+                    <div class="floating-heart floating-heart-3">💕</div>
+                    <div class="floating-heart floating-heart-4">❤️</div>
+                    <div class="floating-heart floating-heart-5">💗</div>
+                    <div class="floating-heart floating-heart-6">💞</div>
+                </div>
+
+                <!-- Efeito de brilho -->
+                <div class="shimmer-effect"></div>
+            </div>
+
+            <!-- Texto de carregamento -->
+            <div class="loading-dots">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+            </div>
+        </div>
+    </div>
 
 <script src="script.js"></script>
 
