@@ -21,7 +21,7 @@ const photos = [
   { id: 2, src: "img2/ft02.jpg", caption: "🌳" },
   { id: 3, src: "img2/ft03.jpg", caption: "😍" },
   { id: 4, src: "img2/ft04.jpg", caption: "te amo princesa" },
-  { id: 5, src: "img2ft05.jpg", caption: "🎂" },
+  { id: 5, src: "img2/ft05.jpg", caption: "🎂" },
   { id: 6, src: "img2/ft06.jpg", caption: "🎄" },
   { id: 7, src: "img2/ft07.jpg", caption: "🏔️" },
   { id: 8, src: "img2/ft08.jpg", caption: "🏠" },
@@ -59,10 +59,9 @@ function createPhotoCards() {
     photoCard.className = "photo-card";
     photoCard.dataset.index = index;
     photoCard.innerHTML = `
-      <img src="${photo.src}" alt="${photo.caption}" class="photo-image" loading="lazy">
+      <img src="${photo.src}" alt="${photo.caption}" class="photo-image">
       <div class="photo-overlay">${photo.caption}</div>
     `;
-    // Avança ao clicar na foto
     photoCard.addEventListener("click", () => {
       if (!isAnimating) nextPhoto();
     });
@@ -168,11 +167,12 @@ function setupEventListeners() {
   if (photoStack) {
     photoStack.addEventListener("touchstart", (e) => {
       startX = e.touches[0].clientX;
-    });
+    }, { passive: true });
+
     photoStack.addEventListener("touchend", (e) => {
       endX = e.changedTouches[0].clientX;
       handleSwipe();
-    });
+    }, { passive: true });
   }
   function handleSwipe() {
     const threshold = 50;
@@ -291,12 +291,14 @@ function createClickEffect(x, y) {
   }
 }
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const loadingOverlay = document.getElementById("romantic-loading");
   if (loadingOverlay) {
-    loadingOverlay.classList.add("fade-out");
     setTimeout(() => {
-      loadingOverlay.style.display = "none";
-    }, 3500); // agora são 2 segundos
+      loadingOverlay.classList.add("fade-out");
+      setTimeout(() => {
+        loadingOverlay.style.display = "none";
+      }, 800); // tempo do fade
+    }, 1200); // loading fica no máximo 1,2s
   }
 });

@@ -871,3 +871,25 @@ img,
         padding: 1rem;
     }
 }
+
+
+#footer {
+  width: 288px;
+  height: 103px; 
+  position: relative;
+  top: 50px;
+  left: 54px;
+}
+
+#bg{
+  position: relative;
+  top: 70px;
+  left: 10px
+}
+
+#h12 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 0;
+}
